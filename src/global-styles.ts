@@ -12,18 +12,7 @@ injectGlobal`
         color: ${colors.black};
         background-color: ${colors.white};
         font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-    }
-
-    h1, h2, h3, h4, h5 {
-        font-family: 'Roboto Slab', serif;
-        font-weight: 100;
-        margin: 0;
-    }
-
-    p {
-        margin: 0;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 100;
     }
 `;
