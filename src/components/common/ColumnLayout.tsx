@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
 import { colors } from '../../constants';
@@ -12,15 +11,19 @@ namespace ColumnLayout {
   `;
 
   export const Left = styled.div`
-    width: 70%;
+    width: 80%;
     height: 100%;
+
+    padding-right: 5%;
 
     border-right: 1px solid ${colors.black};
   `;
 
   export const Right = styled.div`
-    width: 30%;
+    width: 20%;
     height: 100%;
+
+    padding-left: 5%;
   `;
 }
 

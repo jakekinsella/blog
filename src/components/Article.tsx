@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
 import { colors } from '../constants';
@@ -13,22 +12,25 @@ namespace Article {
   `;
 
   export const Title = styled.div`
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 500;
     color: ${colors.black};
 
-    display: flex;
-    justify-content: center;
+    margin-top: 1em;
   `;
 
   export const Subtitle = styled.div`
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1em;
 
-    display: flex;
-    justify-content: center;
+    font-family: 'Roboto', sans-serif;
   `;
 
   export const Body = styled.div`
+    line-height: 1.5em;
+  `;
+
+  export const P = styled.p`
+    margin-bottom: 1.5em;
   `;
 }
 
