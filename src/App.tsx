@@ -11,16 +11,12 @@ import ColumnLayout from './components/common/ColumnLayout';
 const Container = styled.div`
   width: 100%;
   height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 const Content = styled.div`
-  width: 55%;
-
-  flex-grow: 1;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 function App() {
