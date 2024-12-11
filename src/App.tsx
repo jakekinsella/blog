@@ -5,6 +5,7 @@ import './global-styles';
 
 import Header from './components/Header';
 import Article from './components/Article';
+import Sidebar from './components/Sidebar';
 import ColumnLayout from './components/common/ColumnLayout';
 
 const Container = styled.div`
@@ -54,7 +55,7 @@ function App() {
           </ColumnLayout.Left>
 
           <ColumnLayout.Right>
-            Right Column
+            <Sidebar />
           </ColumnLayout.Right>
         </ColumnLayout.Container>
       </Content>

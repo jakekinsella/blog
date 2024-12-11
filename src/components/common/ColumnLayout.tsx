@@ -14,7 +14,8 @@ namespace ColumnLayout {
     width: 80%;
     height: 100%;
 
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 
     border-right: 1px solid ${colors.black};
   `;
@@ -23,7 +24,8 @@ namespace ColumnLayout {
     width: 20%;
     height: 100%;
 
-    padding-left: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
   `;
 }
 
