@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
 `;
 
-const Title = styled.div`
+const Title = styled.a`
   font-family: 'Roboto Slab', serif;
   font-size: 32px;
 
@@ -19,6 +19,17 @@ const Title = styled.div`
   align-items: center;
 
   flex-grow: 1;
+
+  color: ${colors.black};
+  text-decoration: none;
+
+  &:hover {
+    color: ${colors.black};
+  }
+
+  &:active {
+    color: ${colors.black};
+  }
 `;
 
 const Navigation = styled.div`
@@ -52,10 +63,10 @@ const NavLink = styled.a`
 function Header() {
   return (
     <Container>
-      <Title>Jake Kinsella</Title>
+      <Title href="/">Jake Kinsella</Title>
 
       <Navigation>
-        <NavLink href="/feeds.xml">RSS</NavLink>
+        <NavLink href="https://s3.us-east-1.amazonaws.com/jakekinsella.com/feeds.xml">RSS</NavLink>
         <NavLink href="/about">About</NavLink>
       </Navigation>
     </Container>

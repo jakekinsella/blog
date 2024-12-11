@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import './global-styles';
+import '../global-styles';
 
-import Header from './components/Header';
-import Article from './components/Article';
-import Sidebar from './components/Sidebar';
-import ColumnLayout from './components/common/ColumnLayout';
+import Header from '../components/Header';
+import Article from '../components/Article';
+import Sidebar from '../components/Sidebar';
+import ColumnLayout from '../components/common/ColumnLayout';
 
 const Container = styled.div`
   width: 100%;
@@ -19,7 +19,7 @@ const Content = styled.div`
   margin-right: auto;
 `;
 
-function App() {
+function Home() {
   return (
     <Container>
       <Header />
@@ -59,4 +59,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
