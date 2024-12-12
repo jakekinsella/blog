@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '../constants';
-
 const Container = styled.div`
   width: 100%;
 
-  padding-top: 100px;
+  margin-top: 60px;
 `;
 
 function Sidebar() {

@@ -7,6 +7,8 @@ namespace Article {
     font-family: georgia, times, serif;
     color: ${colors.black2};
 
+    margin-bottom: 50px;
+
     display: flex;
     flex-direction: column;
   `;

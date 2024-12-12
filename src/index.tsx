@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import './global-styles';
+
 import Home from './routes/Home';
 import NotFound from './routes/NotFound';
 
