@@ -1,4 +1,5 @@
-import LoremIpsum from './LoremIpsum';
+import ABookAWeek from './ABookAWeek';
+import TheJSuite from './TheJSuite';
 
 export interface T {
   Title: string;
@@ -8,7 +9,8 @@ export interface T {
 }
 
 const _AllArticles = [
-  LoremIpsum
+  ABookAWeek,
+  TheJSuite
 ]
 
 export const AllArticles = _AllArticles.sort((x, y) => x.PostedAt.getTime() - y.PostedAt.getTime()).reverse()

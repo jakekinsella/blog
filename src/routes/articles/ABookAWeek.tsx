@@ -3,15 +3,15 @@ import React from 'react';
 import { T } from '.';
 import Article from '../../components/Article';
 
-const Title = "Lorem Ipsum.";
-const Path = "lorem-ipsum";
+const Title = "A book a week.";
+const Path = "a-book-a-week";
 const PostedAt = new Date(Date.parse("2024-12-12T08:41:58EST"));
 
 function Component () {
   return (
     <Article.Container key={Title}>
       <Article.Title>
-        Lorem Ipsum.
+        {Title}
       </Article.Title>
 
       <Article.Subtitle>
@@ -33,5 +33,5 @@ function Component () {
   );
 }
 
-const LoremIpsum: T = { Title, Path, PostedAt, Component };
-export default LoremIpsum;
+const ABookAWeek: T = { Title, Path, PostedAt, Component };
+export default ABookAWeek;
