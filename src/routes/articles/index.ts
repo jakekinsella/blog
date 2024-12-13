@@ -13,4 +13,4 @@ const _AllArticles = [
   TheJSuite
 ]
 
-export const AllArticles = _AllArticles.sort((x, y) => x.PostedAt.getTime() - y.PostedAt.getTime()).reverse()
+export const All = _AllArticles.sort((x, y) => x.PostedAt.getTime() - y.PostedAt.getTime()).reverse()

@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 
 import { colors } from '../constants';
@@ -13,13 +14,32 @@ namespace Article {
     flex-direction: column;
   `;
 
-  export const Title = styled.div`
+
+  const TitleContainer = styled.div`
+    margin-top: 1em;
+  `;
+
+  const TitleInner = styled.a`
+    text-decoration: none;
+
     font-size: 30px;
     font-weight: 500;
     color: ${colors.black};
-
-    margin-top: 1em;
   `;
+
+  interface Props {
+    href: string;
+    children: React.ReactNode
+  }
+  export function Title({ href, children }: Props) {
+    return (
+      <TitleContainer>
+        <TitleInner href={href}>
+          {children}
+        </TitleInner>
+      </TitleContainer>
+    )
+  }
 
   export const Subtitle = styled.div`
     margin-bottom: 1em;

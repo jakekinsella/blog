@@ -1,22 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, RouteObject } from "react-router-dom";
 
 import './global-styles';
 
-import Home from './routes/Home';
+import * as Articles from './routes/articles';
+
+import ShowArticles from './routes/ShowArticles';
 import NotFound from './routes/NotFound';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <NotFound />
-  },
-]);
+const router = createBrowserRouter(
+  Articles.All
+    .map((article): RouteObject => ({ path: article.Path, element: <ShowArticles articles={[article]} /> }))
+    .concat([
+      {
+        path: "/",
+        element: <ShowArticles articles={Articles.All.slice(0, 3)} />,
+        errorElement: <NotFound />
+      },
+    ])
+);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

@@ -4,13 +4,13 @@ import { T } from '.';
 import Article from '../../components/Article';
 
 const Title = "The J-Suite.";
-const Path = "the-j-suite";
+const Path = "/post/the-j-suite";
 const PostedAt = new Date(Date.parse("2024-12-13T08:32:21EST"));
 
 function Component () {
   return (
     <Article.Container key={Title}>
-      <Article.Title>
+      <Article.Title href={Path}>
         {Title}
       </Article.Title>
 

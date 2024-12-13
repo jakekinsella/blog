@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import ColumnLayout from '../components/common/ColumnLayout';
-import { AllArticles } from './articles';
+import * as Articles from './articles';
 
 const Container = styled.div`
   width: 100%;
@@ -17,7 +17,11 @@ const Content = styled.div`
   margin-right: auto;
 `;
 
-function Home() {
+interface Props {
+  articles: Articles.T[]
+}
+
+function ShowArticles({ articles }: Props) {
   return (
     <Container>
       <Header />
@@ -25,7 +29,7 @@ function Home() {
       <Content>
         <ColumnLayout.Container>
           <ColumnLayout.Left>
-            {AllArticles.slice(0, 3).map(article => <article.Component />)}
+            {articles.map(article => <article.Component />)}
           </ColumnLayout.Left>
 
           <ColumnLayout.Right>
@@ -37,4 +41,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ShowArticles;
