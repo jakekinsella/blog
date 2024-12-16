@@ -1,3 +1,4 @@
+import YearInReview2024 from './YearInReview2024';
 import RSSReader from './RSSReader';
 import BooksInAYear from './BooksInAYear';
 import TheJSuite from './TheJSuite';
@@ -11,6 +12,7 @@ export interface T {
 }
 
 const _AllArticles = [
+  YearInReview2024,
   RSSReader,
   BooksInAYear,
   TheJSuite,

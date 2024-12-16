@@ -6,6 +6,7 @@ import './global-styles';
 
 import * as Articles from './routes/articles';
 
+import About from './routes/About';
 import ShowArticles from './routes/ShowArticles';
 import NotFound from './routes/NotFound';
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter(
   Articles.All
     .map((article): RouteObject => ({ path: article.Path, element: <ShowArticles articles={[article]} /> }))
     .concat([
+      {
+        path: "/about",
+        element: <About />
+      },
       {
         path: "/",
         element: <ShowArticles articles={Articles.All.slice(0, 3)} />,
