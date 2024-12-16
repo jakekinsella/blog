@@ -1,16 +1,42 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+import * as Articles from '../routes/articles';
+
 const Container = styled.div`
   width: 100%;
 
   margin-top: 60px;
+
+  font-size: 14px;
+`;
+
+const Header = styled.b`
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+const ArticleList = styled.div`
+  margin-top: 20px;
+`;
+
+const ArticleElement = styled.a`
+  display: block;
+
+  margin-left: 5px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 `;
 
 function Sidebar() {
   return (
     <Container>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nulla vitae augue rhoncus fermentum quis ac neque.
+
+      <ArticleList>
+        <Header>Recent</Header>
+        {Articles.All.map((article) => <ArticleElement href={article.Path}>{article.Title}</ArticleElement>)}
+      </ArticleList>
     </Container>
   );
 }

@@ -3,10 +3,10 @@ import React from 'react';
 import { T } from '.';
 import Article from '../../components/Article';
 
-const Title = "Project Spotlight: The J-Suite";
+const Title = "Goal Update: 52 Books in a Year";
 const Subtitle = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-const Path = "/post/the-j-suite";
-const PostedAt = new Date(Date.parse("2024-12-13T08:32:21EST"));
+const Path = "/post/52-books-in-a-year";
+const PostedAt = new Date(Date.parse("2024-12-12T08:41:58EST"));
 
 function Component () {
   return (
@@ -24,5 +24,5 @@ function Component () {
   );
 }
 
-const TheJSuite: T = { Title, Subtitle, Path, PostedAt, Component };
-export default TheJSuite;
+const BooksInAYear: T = { Title, Subtitle, Path, PostedAt, Component };
+export default BooksInAYear;

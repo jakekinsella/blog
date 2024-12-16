@@ -1,4 +1,5 @@
-import ABookAWeek from './ABookAWeek';
+import RSSReader from './RSSReader';
+import BooksInAYear from './BooksInAYear';
 import TheJSuite from './TheJSuite';
 
 export interface T {
@@ -10,8 +11,9 @@ export interface T {
 }
 
 const _AllArticles = [
-  ABookAWeek,
-  TheJSuite
+  RSSReader,
+  BooksInAYear,
+  TheJSuite,
 ]
 
-export const All = _AllArticles.sort((x, y) => x.PostedAt.getTime() - y.PostedAt.getTime()).reverse()
+export const All = _AllArticles.sort((x, y) => x.PostedAt.getTime() - y.PostedAt.getTime());

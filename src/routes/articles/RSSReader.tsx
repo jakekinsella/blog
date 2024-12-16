@@ -3,10 +3,10 @@ import React from 'react';
 import { T } from '.';
 import Article from '../../components/Article';
 
-const Title = "A book a week.";
+const Title = "Project Spotlight: RSS Reader";
 const Subtitle = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-const Path = "/post/a-book-a-week";
-const PostedAt = new Date(Date.parse("2024-12-12T08:41:58EST"));
+const Path = "/post/rss-reader";
+const PostedAt = new Date(Date.parse("2024-12-16T08:57:53EST"));
 
 function Component () {
   return (
@@ -24,5 +24,5 @@ function Component () {
   );
 }
 
-const ABookAWeek: T = { Title, Subtitle, Path, PostedAt, Component };
-export default ABookAWeek;
+const RSSReader: T = { Title, Subtitle, Path, PostedAt, Component };
+export default RSSReader;
