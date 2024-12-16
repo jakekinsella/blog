@@ -3,6 +3,7 @@ import TheJSuite from './TheJSuite';
 
 export interface T {
   Title: string;
+  Subtitle: string;
   Path: string;
   PostedAt: Date;
   Component: React.FunctionComponent;

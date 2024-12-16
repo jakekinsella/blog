@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { colors } from '../constants';
 
 namespace Article {
-  export const Container = styled.div`
+  const Container = styled.div`
     font-family: georgia, times, serif;
     color: ${colors.black2};
 
@@ -27,11 +27,11 @@ namespace Article {
     color: ${colors.black};
   `;
 
-  interface Props {
+  interface TitleProps {
     href: string;
-    children: React.ReactNode
+    children: React.ReactNode;
   }
-  export function Title({ href, children }: Props) {
+  function Title({ href, children }: TitleProps) {
     return (
       <TitleContainer>
         <TitleInner href={href}>
@@ -41,15 +41,39 @@ namespace Article {
     )
   }
 
-  export const Subtitle = styled.div`
+  const Subtitle = styled.div`
     margin-bottom: 1em;
 
     font-family: 'Roboto', sans-serif;
   `;
 
-  export const Body = styled.div`
+  const Body = styled.div`
     line-height: 1.5em;
   `;
+
+  interface Props {
+    title: string;
+    subtitle: string;
+    path: string;
+    children: React.ReactNode;
+  }
+  export function T({ title, subtitle, path, children }: Props) {
+    return (
+      <Container key={title}>
+        <Title href={path}>
+          {title}
+        </Title>
+
+        <Subtitle>
+          {subtitle}
+        </Subtitle>
+
+        <Body>
+          {children}
+        </Body>
+      </Container>
+    )
+  }
 
   export const P = styled.p`
     margin-bottom: 1.5em;
