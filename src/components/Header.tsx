@@ -58,6 +58,10 @@ const NavLink = styled.a`
   &:active {
     color: ${colors.blackActive};
   }
+
+  @media (max-width: 750px) {
+    margin-right: 8%;
+  }
 `;
 
 function Header() {
