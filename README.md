@@ -3,7 +3,7 @@
 My personal blog.
 
 # todo
- - About page
+ - Footer?
  - Content for About page
  - Content for sidebar
  - Content posts

@@ -27,16 +27,20 @@ namespace Article {
     color: ${colors.black};
   `;
 
+  const TitleInnerNoLink = styled.a`
+    font-size: 30px;
+    font-weight: 500;
+    color: ${colors.black};
+  `;
+
   interface TitleProps {
-    href: string;
+    href?: string;
     children: React.ReactNode;
   }
   function Title({ href, children }: TitleProps) {
     return (
       <TitleContainer>
-        <TitleInner href={href}>
-          {children}
-        </TitleInner>
+        {href === undefined ? <TitleInnerNoLink>{children}</TitleInnerNoLink> : <TitleInner href={href}>{children}</TitleInner>}
       </TitleContainer>
     )
   }
@@ -53,20 +57,16 @@ namespace Article {
 
   interface Props {
     title: string;
-    subtitle: string;
-    path: string;
+    subtitle?: string;
+    path?: string;
     children: React.ReactNode;
   }
   export function T({ title, subtitle, path, children }: Props) {
     return (
       <Container key={title}>
-        <Title href={path}>
-          {title}
-        </Title>
+        <Title href={path}>{title}</Title>
 
-        <Subtitle>
-          {subtitle}
-        </Subtitle>
+        {subtitle === undefined ? <div /> : <Subtitle>{subtitle}</Subtitle>}
 
         <Body>
           {children}
