@@ -81,7 +81,11 @@ function Footer() {
       </NavLinkContainerStart>
       
       <NavLinkContainerMiddle>
-        <NavLink href="https://s3.us-east-1.amazonaws.com/jakekinsella.com/feeds.xml">RSS</NavLink>
+        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/feeds.xml">RSS</NavLink>
+      </NavLinkContainerMiddle>
+
+      <NavLinkContainerMiddle>
+        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/Resume.pdf">Resume</NavLink>
       </NavLinkContainerMiddle>
       
       <NavLinkContainerEnd>

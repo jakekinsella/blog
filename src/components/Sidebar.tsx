@@ -31,7 +31,7 @@ const ArticleElement = styled.a`
 function Sidebar() {
   return (
     <Container>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nulla vitae augue rhoncus fermentum quis ac neque.
+      Hi, I’m Jake Kinsella. I’m a senior software engineer + technical leader blogging about my work at ChaosSearch, my personal projects, and chronicling my journey in starting my own company.
 
       <ArticleList>
         <Header>Recent</Header>

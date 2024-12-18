@@ -70,7 +70,8 @@ function Header() {
       <Title href="/">Jake Kinsella</Title>
 
       <Navigation>
-        <NavLink href="https://s3.us-east-1.amazonaws.com/jakekinsella.com/feeds.xml">RSS</NavLink>
+        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/feeds.xml">RSS</NavLink>
+        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/Resume.pdf">Resume</NavLink>
         <NavLink href="/about">About</NavLink>
       </Navigation>
     </Container>
