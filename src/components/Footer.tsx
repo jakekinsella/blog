@@ -5,9 +5,11 @@ import { colors } from '../constants';
 
 const Container = styled.div`
   width: 100%;
-  height: 3rem;
+  height: 2rem;
 
   border-top: 1px solid ${colors.black};
+
+  padding-top: 0.8rem;
 
   display: flex;
 `;
@@ -17,7 +19,7 @@ const NavLinkContainerStart = styled.div`
 
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
   padding-left: 3rem;
 
@@ -32,7 +34,7 @@ const NavLinkContainerMiddle = styled.div`
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   padding-right: 6rem;
 
@@ -46,7 +48,7 @@ const NavLinkContainerEnd = styled.div`
 
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 
   padding-right: 3rem;
 
