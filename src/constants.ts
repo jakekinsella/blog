@@ -1,18 +1,21 @@
-export const colors = {
-  black: '#444',
-  white: '#fff',
+export const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  black2: '#666',
+export const colors = {
+  black: (!isDarkMode ? '#444' : '#fff'),
+  white: (!isDarkMode ? '#fff' : '#444'),
+
+  black1_5: (!isDarkMode ? '#666' : '#eee'),
+  black2: (!isDarkMode ? '#666' : '#ccc'),
 
   lightBlack: '#999',
   lighterBlack: '#aaa',
   lightestBlack: '#bbb',
 
-  whiteHover: '#f9f9f9',
-  whiteActive: '#f1f1f1',
+  whiteHover: (!isDarkMode ? '#f9f9f9' : '#333'),
+  whiteActive: (!isDarkMode ? '#f1f1f1' : '#222'),
 
-  blackHover: '#111',
-  blackActive:  '#111',
+  blackHover: (!isDarkMode ? '#111': '#f9f9f9'),
+  blackActive: (!isDarkMode ? '#111' : '#f1f1f1'),
 
   lightGray: '#eeeeee',
 
