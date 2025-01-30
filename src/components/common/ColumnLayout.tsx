@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { colors } from '../../constants';
+import { Colors } from '../../constants';
 
 namespace ColumnLayout {
   export const Container = styled.div`
@@ -17,7 +17,7 @@ namespace ColumnLayout {
     padding-left: 3%;
     padding-right: 3%;
 
-    border-right: 1px solid ${colors.black};
+    border-right: 1px solid ${Colors.Container.border};
 
     @media (max-width: 750px) {
       width: 100%;

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '../constants';
+import { Colors } from '../constants';
 
 const Container = styled.div`
   width: 100%;
 
-  border-bottom: 1px solid ${colors.black};
+  border-bottom: 1px solid ${Colors.Container.border};
 
   display: flex;
 `;
@@ -20,15 +20,15 @@ const Title = styled.a`
 
   flex-grow: 1;
 
-  color: ${colors.black};
+  color: ${Colors.Text.base};
   text-decoration: none;
 
   &:hover {
-    color: ${colors.black};
+    color: ${Colors.Text.hover};
   }
 
   &:active {
-    color: ${colors.black};
+    color: ${Colors.Text.active};
   }
 `;
 
@@ -46,17 +46,17 @@ const NavLink = styled.a`
   cursor: pointer;
   user-select: none;
 
-  color: ${colors.black};
+  color: ${Colors.Text.base};
   text-decoration: none;
 
   margin-right: 2%;
 
   &:hover {
-    color: ${colors.blackHover};
+    color: ${Colors.Text.hover};
   }
 
   &:active {
-    color: ${colors.blackActive};
+    color: ${Colors.Text.active};
   }
 
   @media (max-width: 750px) {

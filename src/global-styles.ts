@@ -1,6 +1,6 @@
 import { injectGlobal } from '@emotion/css';
 
-import { colors } from './constants';
+import { Colors } from './constants';
 
 injectGlobal`
     html, body, #root {
@@ -9,22 +9,22 @@ injectGlobal`
         width: 100%;
         height: 100%;
         position: relative;
-        color: ${colors.black1_5};
-        background-color: ${colors.white};
+        color: ${Colors.Text.base};
+        background-color: ${Colors.Container.background};
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 100;
     }
 
     a {
-      color: ${colors.black1_5};
+      color: ${Colors.Text.base};
 
       &:hover {
-        color: ${colors.blackHover};
+        color: ${Colors.Text.hover};
       }
 
       &:active {
-        color: ${colors.blackActive};
+        color: ${Colors.Text.active};
       }
     }
 `;

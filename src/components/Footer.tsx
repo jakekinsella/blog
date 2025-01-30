@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '../constants';
+import { Colors } from '../constants';
 
 const Container = styled.div`
   width: 100%;
   height: 2rem;
 
-  border-top: 1px solid ${colors.black};
+  border-top: 1px solid ${Colors.Container.border};
 
   padding-top: 0.8rem;
 
@@ -63,15 +63,15 @@ const NavLink = styled.a`
   cursor: pointer;
   user-select: none;
 
-  color: ${colors.black2};
+  color: ${Colors.Text.Faint.base};
   text-decoration: none;
 
   &:hover {
-    color: ${colors.blackHover};
+    color: ${Colors.Text.Faint.hover};
   }
 
   &:active {
-    color: ${colors.blackActive};
+    color: ${Colors.Text.Faint.active};
   }
 `;
 

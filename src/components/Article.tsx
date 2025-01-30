@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '../constants';
+import { Colors } from '../constants';
 
 namespace Article {
   const Container = styled.div`
     font-family: georgia, times, serif;
-    color: ${colors.black2};
+    color: ${Colors.Text.Faint.base};
 
     margin-bottom: 50px;
 
@@ -24,13 +24,13 @@ namespace Article {
 
     font-size: 30px;
     font-weight: 500;
-    color: ${colors.black};
+    color: ${Colors.Text.base};
   `;
 
   const TitleInnerNoLink = styled.a`
     font-size: 30px;
     font-weight: 500;
-    color: ${colors.black};
+    color: ${Colors.Text.base};
   `;
 
   interface TitleProps {
