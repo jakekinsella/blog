@@ -5,11 +5,11 @@ import { Colors } from '../constants';
 
 const Container = styled.div`
   width: 100%;
-  height: 2rem;
 
   border-top: 1px solid ${Colors.Container.border};
 
   padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 
   display: flex;
 `;

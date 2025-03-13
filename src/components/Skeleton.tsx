@@ -8,17 +8,19 @@ import ColumnLayout from '../components/common/ColumnLayout';
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
 `;
 
 const Content = styled.div`
-  min-height: 100%;
   max-width: 64rem;
+
+  flex-grow: 1;
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: -3rem;
-  margin-bottom: -3rem;
 `;
 
 const ContentInner = styled.div`
@@ -36,17 +38,19 @@ function Skeleton({ children }: Props) {
       <Header />
 
       <Content>
-        <ContentInner>
           <ColumnLayout.Container>
             <ColumnLayout.Left>
-              {children}
+              <ContentInner>
+                {children}
+              </ContentInner>
             </ColumnLayout.Left>
 
             <ColumnLayout.Right>
-              <Sidebar />
+              <ContentInner>
+                <Sidebar />
+              </ContentInner>
             </ColumnLayout.Right>
           </ColumnLayout.Container>
-        </ContentInner>
       </Content>
 
       <Footer />

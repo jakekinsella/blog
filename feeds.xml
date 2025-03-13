@@ -6,22 +6,14 @@
     <description>Recent content on Jake Kinsella</description>
     <language>en-us</language>
     <copyright>Jake Kinsella</copyright>
-    <lastBuildDate>Sun, 13 Dec 2024 08:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 03:35:52 -0500</lastBuildDate>
     <atom:link href="https://s3.us-east-1.amazonaws.com/jakekinsella.com/feeds.xml" rel="self" type="application/rss+xml"/>
     
     <item>
-      <title>A book a week.</title>
-      <link>https://jakekinsella.com/posts/a-book-a-week/</link>
-      <pubDate>Sun, 12 Dec 2024 08:41:58 -0500</pubDate>
-      <guid>https://jakekinsella.com/posts/a-book-a-week/</guid>
-      <description>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</description>
-    </item>
-
-    <item>
-      <title>The J-Suite</title>
-      <link>https://jakekinsella.com/posts/the-j-suite/</link>
-      <pubDate>Sun, 13 Dec 2024 08:32:31 -0500</pubDate>
-      <guid>https://jakekinsella.com/posts/the-j-suite/</guid>
+      <title>Hello world!</title>
+      <link>https://jakekinsella.com/posts/hello-world/</link>
+      <pubDate>Thu, 13 Mar 2025 03:34:57 -0500</pubDate>
+      <guid>https://jakekinsella.com/posts/hello-world/</guid>
       <description>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</description>
     </item>
   </channel>

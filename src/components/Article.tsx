@@ -8,8 +8,6 @@ namespace Article {
     font-family: georgia, times, serif;
     color: ${Colors.Text.Faint.base};
 
-    margin-bottom: 50px;
-
     display: flex;
     flex-direction: column;
   `;

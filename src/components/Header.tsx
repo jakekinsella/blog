@@ -60,7 +60,7 @@ const NavLink = styled.a`
   }
 
   @media (max-width: 750px) {
-    margin-right: 8%;
+    margin-right: 16%;
   }
 `;
 
