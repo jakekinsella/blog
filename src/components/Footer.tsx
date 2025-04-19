@@ -23,7 +23,7 @@ const NavLinkContainerStart = styled.div`
 
   padding-left: 3rem;
 
-  @media (max-width: 750px) {
+  @media (max-width: 850px) {
     justify-content: center;
     padding-left: 0;
   }
@@ -38,7 +38,7 @@ const NavLinkContainerMiddle = styled.div`
 
   padding-right: 6rem;
 
-  @media (max-width: 750px) {
+  @media (max-width: 850px) {
     display: none;
   }
 `;
@@ -52,7 +52,7 @@ const NavLinkContainerEnd = styled.div`
 
   padding-right: 3rem;
 
-  @media (max-width: 750px) {
+  @media (max-width: 850px) {
     display: none;
   }
 `;
@@ -84,6 +84,14 @@ function Footer() {
       
       <NavLinkContainerMiddle>
         <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/feeds.xml">RSS</NavLink>
+      </NavLinkContainerMiddle>
+
+      <NavLinkContainerMiddle>
+        <NavLink href="https://www.linkedin.com/in/jake-kinsella/">LinkedIn</NavLink>
+      </NavLinkContainerMiddle>
+
+      <NavLinkContainerMiddle>
+        <NavLink href="https://github.com/jakekinsella">GitHub</NavLink>
       </NavLinkContainerMiddle>
 
       <NavLinkContainerMiddle>

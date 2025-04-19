@@ -13,6 +13,11 @@ function About() {
 
         <Article.P>Before that, I went to Northeastern for CS and interned at a variety of Boston startups. I caught the startup bug early in high school and have been doing it ever since. But you can read about the rest of it in my <a href="https://jakekinsella-portfolio.s3.amazonaws.com/Resume.pdf">resume</a>.</Article.P>
 
+        <Article.P>
+          <a href="https://www.linkedin.com/in/jake-kinsella/">LinkedIn</a><br />
+          <a href="https://github.com/jakekinsella">GitHub</a>
+        </Article.P>
+
         <img src="https://jakekinsella-portfolio.s3.amazonaws.com/images/jake.jpg" alt="Me" width="100%" />
       </Article.T>
     </Skeleton>

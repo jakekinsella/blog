@@ -11,5 +11,4 @@ My personal blog.
 `yarn build`
 
 # todo
- - LinkedIn/Github
  - Content posts
