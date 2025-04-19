@@ -7,9 +7,9 @@ My personal blog.
 `yarn start`
 
 # build+deploy
+`yarn generate-feeds`
 `yarn build`
 
 # todo
- - Autogenerate RSS feed
  - LinkedIn/Github
  - Content posts

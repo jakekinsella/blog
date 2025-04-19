@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
@@ -6,15 +7,15 @@
     <description>Recent content on Jake Kinsella</description>
     <language>en-us</language>
     <copyright>Jake Kinsella</copyright>
-    <lastBuildDate>Thu, 13 Mar 2025 03:35:52 -0500</lastBuildDate>
-    <atom:link href="https://s3.us-east-1.amazonaws.com/jakekinsella.com/feeds.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 19 Apr 2025 19:48:56 GMT</lastBuildDate>
+    <atom:link href="https://jakekinsella-portfolio.s3.amazonaws.com/feeds.xml" rel="self" type="application/rss+xml"/>
     
     <item>
       <title>Hello world!</title>
-      <link>https://jakekinsella.com/posts/hello-world/</link>
-      <pubDate>Thu, 13 Mar 2025 03:34:57 -0500</pubDate>
-      <guid>https://jakekinsella.com/posts/hello-world/</guid>
-      <description>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</description>
+      <link>https://jakekinsella.com/post/hello-world</link>
+      <pubDate>Mon, 03 Mar 2025 08:44:57 GMT</pubDate>
+      <guid>https://jakekinsella.com/post/hello-world</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
