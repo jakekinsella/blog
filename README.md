@@ -2,6 +2,14 @@
 
 My personal blog.
 
+# local development
+`yarn install`
+`yarn start`
+
+# build+deploy
+`yarn build`
+
 # todo
- - Content posts
  - Autogenerate RSS feed
+ - LinkedIn/Github
+ - Content posts

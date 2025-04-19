@@ -15,8 +15,6 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  max-width: 64rem;
-
   flex-grow: 1;
 
   margin-left: auto;
@@ -39,17 +37,19 @@ function Skeleton({ children }: Props) {
 
       <Content>
           <ColumnLayout.Container>
-            <ColumnLayout.Left>
+            <ColumnLayout.Small />
+
+            <ColumnLayout.Large>
               <ContentInner>
                 {children}
               </ContentInner>
-            </ColumnLayout.Left>
+            </ColumnLayout.Large>
 
-            <ColumnLayout.Right>
+            <ColumnLayout.Small>
               <ContentInner>
                 <Sidebar />
               </ContentInner>
-            </ColumnLayout.Right>
+            </ColumnLayout.Small>
           </ColumnLayout.Container>
       </Content>
 

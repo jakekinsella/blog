@@ -79,7 +79,7 @@ function Footer() {
   return (
     <Container>
       <NavLinkContainerStart>
-        <NavLink href="/">© Jake Kinsella 2024</NavLink>
+        <NavLink href="/">© Jake Kinsella 2025</NavLink>
       </NavLinkContainerStart>
       
       <NavLinkContainerMiddle>

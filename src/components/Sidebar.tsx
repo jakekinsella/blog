@@ -6,8 +6,6 @@ import * as Articles from '../routes/articles';
 const Container = styled.div`
   width: 100%;
 
-  margin-top: 60px;
-
   font-size: 14px;
 `;
 
