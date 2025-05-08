@@ -76,6 +76,10 @@ namespace Article {
   export const P = styled.p`
     margin-bottom: 1.5em;
   `;
+
+  export const BR = styled.div`
+    height: 0.5em;
+  `;
 }
 
 export default Article;
