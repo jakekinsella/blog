@@ -13,8 +13,7 @@ const items = Articles.All.map((article) => {
     </item>`;
 })
 
-const feeds = `
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+const feeds = `<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Jake Kinsella</title>
