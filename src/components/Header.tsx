@@ -20,6 +20,8 @@ const Title = styled.a`
 
   flex-grow: 1;
 
+  margin-left: 1%;
+
   color: ${Colors.Text.base};
   text-decoration: none;
 
@@ -84,7 +86,7 @@ const NavLinkKeep = styled.a`
   }
 
   @media (max-width: 750px) {
-    margin-right: 16%;
+    margin-right: 10%;
   }
 `;
 
