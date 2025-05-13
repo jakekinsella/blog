@@ -96,8 +96,8 @@ function Header() {
       <Title href="/">Jake Kinsella</Title>
 
       <Navigation>
-        <NavLink href="https://www.linkedin.com/in/jake-kinsella/">LinkedIn</NavLink>
-        <NavLink href="https://github.com/jakekinsella">GitHub</NavLink>
+        <NavLink href="https://www.linkedin.com/in/jake-kinsella/" target="_blank" rel="noreferrer">LinkedIn</NavLink>
+        <NavLink href="https://github.com/jakekinsella" target="_blank" rel="noreferrer">GitHub</NavLink>
         <NavLinkKeep href="/about">About</NavLinkKeep>
       </Navigation>
     </Container>

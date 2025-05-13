@@ -87,15 +87,15 @@ function Footer() {
       </NavLinkContainerMiddle>
 
       <NavLinkContainerMiddle>
-        <NavLink href="https://www.linkedin.com/in/jake-kinsella/">LinkedIn</NavLink>
+        <NavLink href="https://www.linkedin.com/in/jake-kinsella/" target="_blank" rel="noreferrer">LinkedIn</NavLink>
       </NavLinkContainerMiddle>
 
       <NavLinkContainerMiddle>
-        <NavLink href="https://github.com/jakekinsella">GitHub</NavLink>
+        <NavLink href="https://github.com/jakekinsella" target="_blank" rel="noreferrer">GitHub</NavLink>
       </NavLinkContainerMiddle>
 
       <NavLinkContainerMiddle>
-        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/Resume.pdf">Resume</NavLink>
+        <NavLink href="https://jakekinsella-portfolio.s3.amazonaws.com/Resume.pdf" target="_blank" rel="noreferrer">Resume</NavLink>
       </NavLinkContainerMiddle>
       
       <NavLinkContainerEnd>
