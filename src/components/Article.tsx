@@ -57,14 +57,16 @@ namespace Article {
     title: string;
     subtitle?: string;
     path?: string;
+    postedAt?: Date;
     children: React.ReactNode;
   }
-  export function T({ title, subtitle, path, children }: Props) {
+  export function T({ title, subtitle, path, postedAt, children }: Props) {
     return (
       <Container key={title}>
         <Title href={path}>{title}</Title>
 
         {subtitle === undefined ? <div /> : <Subtitle>{subtitle}</Subtitle>}
+        {postedAt === undefined ? <div /> : <Subtitle>{postedAt.toLocaleString('default', { month: 'long' })} {postedAt.getDay()}, {postedAt.getFullYear()}</Subtitle>}
 
         <Body>
           {children}

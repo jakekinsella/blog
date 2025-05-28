@@ -10,7 +10,7 @@ const PostedAt = new Date(Date.parse("Sat, 03 Mar 2025 03:44:57 EST"));
 
 function Component () {
   return (
-    <Article.T title={Title} subtitle={Subtitle} path={Path}>
+    <Article.T title={Title} subtitle={Subtitle} path={Path} postedAt={PostedAt}>
       <Article.P>Hi, I’m Jake Kinsella. I’m a senior software engineer + tech lead blogging about my work at ChaosSearch, my personal projects, and chronicling my journey in starting my own company.</Article.P>
     </Article.T>
   );
