@@ -66,7 +66,7 @@ namespace Article {
         <Title href={path}>{title}</Title>
 
         {subtitle === undefined ? <div /> : <Subtitle>{subtitle}</Subtitle>}
-        {postedAt === undefined ? <div /> : <Subtitle>{postedAt.toLocaleString('default', { month: 'long' })} {postedAt.getDay()}, {postedAt.getFullYear()}</Subtitle>}
+        {postedAt === undefined ? <div /> : <Subtitle>{postedAt.toLocaleString('default', { month: 'long' })} {postedAt.getDate()}, {postedAt.getFullYear()}</Subtitle>}
 
         <Body>
           {children}
@@ -82,6 +82,35 @@ namespace Article {
   export const BR = styled.div`
     height: 0.5em;
   `;
+
+
+  const ImageContainer = styled.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  `;
+
+  const ImageInner = styled.div`
+    width: 100%;
+  `;
+
+  interface ImageProps {
+    src: string;
+    alt: string;
+  }
+  export function Image({ src, alt }: ImageProps) {
+    return (
+      <ImageContainer>
+        <ImageInner>
+          <img src={src} alt={alt} width="70%" />
+        </ImageInner>
+
+        {alt}
+      </ImageContainer>
+    )
+  }
 }
 
 export default Article;
